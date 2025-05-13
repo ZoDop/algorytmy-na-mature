@@ -1,0 +1,17 @@
+
+bin - binarny
+print(bin(123)[2:]) --> wbudowana funkcja z dziesiętnego na binarny
+print(int("101010", 2)) --> wbudowana funkcja z binarnego na dziesiętny
+
+oct - ósemkowy
+print(oct(123)[2:]) --> wbudowana funkcja z dziesiętnego na ósemkowy
+print(int("156856", 8)) --> wbudowana funkcja z ósemkowego na dziesiętny
+
+hex - szesnastkowy
+print(hex(123)[2:]) --> wbudowana funkcja z dziesiętnego na szesnastkowy
+print(int("23567", 16)) --> wbudowana funkcja z szesnastkowego na dziesiętny
+
+chr - zmienianie z kodu ASCII na literki
+ord - zmienianie z literek na kod ASCII
+
+sqrt(liczba) albo liczba**0.5 - pierwiastek
