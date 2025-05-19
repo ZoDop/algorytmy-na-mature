@@ -15,3 +15,25 @@ chr - zmienianie z kodu ASCII na literki
 ord - zmienianie z literek na kod ASCII
 
 sqrt(liczba) albo liczba**0.5 - pierwiastek
+
+file = open("symbole.txt", "r") - r oznacza że w trybie do czytania
+file = open("symbole.txt", "w") - w oznacza że w trybie do zapisu
+file = open("symbole.txt", "a") - a oznacza że w trybie do dodawania
+
+for line in file:      -----> wczytywanie lini bez entera
+    line = line.strip()
+    print(line)
+
+for line in file:      ------> wczytywanie lini ale rozdzielamy na podstawie tego co jest w nawiasiku
+    line = line.split(" ")
+    print(line)
+
+
+s[:] - od początku do konca
+s[5:7] - od 5 do 7 wyłącznie
+s[5:] - od 5 do konca
+s[:5] - od początku do 5 wyłącznie
+s[-1] - ostatni element
+s[:6:2] - od początku do 6 wyłącznie co drugi element
+s[::2] - od początku do konca co drugi element
+s[::-1] - od konca do początku
