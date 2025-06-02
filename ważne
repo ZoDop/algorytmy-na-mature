@@ -37,3 +37,7 @@ s[-1] - ostatni element
 s[:6:2] - od początku do 6 wyłącznie co drugi element
 s[::2] - od początku do konca co drugi element
 s[::-1] - od konca do początku
+
+
+modulo - reszta z dzielenia  %
+div - dzielenie całkowite    //
