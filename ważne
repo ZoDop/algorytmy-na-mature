@@ -38,6 +38,12 @@ s[:6:2] - od początku do 6 wyłącznie co drugi element
 s[::2] - od początku do konca co drugi element
 s[::-1] - od konca do początku
 
+list = [4, 5, 6, 7, 8, 9, 2.,8, 9]
+numbers.sort() ------ sortowanie listy, zmiana tej poprzedniej
+numbers = sorted(numbers) --------sortowanie listy i wpisywanie ją w nową, ta poprzednia się nie zmienia
+
+numbers.sort(reverse=True) --- sortowanie malejąco
+
 
 modulo - reszta z dzielenia  %
 div - dzielenie całkowite    //
