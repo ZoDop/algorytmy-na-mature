@@ -47,3 +47,10 @@ numbers.sort(reverse=True) --- sortowanie malejąco
 
 modulo - reszta z dzielenia  %
 div - dzielenie całkowite    //
+
+
+" ".join(lista)
+
+
+print(any([True, False, True])) # zwraca true jesli którykolwiek to true
+print(all([True, False, True]))# zwracaa true jesli wszytsko to true
