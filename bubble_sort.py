@@ -7,6 +7,8 @@ def bubble_sort(numbers):
         for k in range(n - 1 - i):
             if numbers[k] < numbers[k + 1]:
                 numbers[k], numbers[k + 1] = numbers[k + 1], numbers[k]
+    return numbers
 
 bubble_sort(numbers)
+
 print(numbers)
