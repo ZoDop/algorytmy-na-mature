@@ -7,13 +7,6 @@ def prime(n):
             return False
     return True
 
-count = 0
-file = open('../algorytmy-na-mature/liczby_pierwsze', 'r')
-for line in file:
-    if prime(int(line)):
-        count+=1
-
-print(count)
 
 def factors_all(n):
     i = 2
@@ -24,7 +17,5 @@ def factors_all(n):
         else:
             i += 1
 
-file = open('../algorytmy-na-mature/liczby_doskonale.py', 'r')
-for line in file:
-    factors_all(int(line))
-    print()
+
+factors_all(120)
