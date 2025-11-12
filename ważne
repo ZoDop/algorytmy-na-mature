@@ -1,4 +1,11 @@
 
+range(start, stop, step)
+
+start – od jakiej liczby zaczynamy (włącznie)
+stop – do jakiej liczby idziemy ( bez tej liczby)
+step – o ile zmieniamy wartość w każdej iteracji (może być dodatni lub ujemny, ale nie może być 0)
+
+
 bin - binarny
 print(bin(123)[2:]) --> wbudowana funkcja z dziesiętnego na binarny
 print(int("101010", 2)) --> wbudowana funkcja z binarnego na dziesiętny
@@ -54,3 +61,37 @@ div - dzielenie całkowite    //
 
 print(any([True, False, True])) # zwraca true jesli którykolwiek to true
 print(all([True, False, True]))# zwracaa true jesli wszytsko to true
+
+
+Iterować po liście → brać po kolei każdy jej element.
+Iterować po range(5) → brać po kolei liczby: 0,1,2,3,4.
+Iterować po stringu → brać po kolei znaki.
+
+
+for i in item
+Iterujesz po elementach z listy item
+
+for i in range(1, len(item))
+Iterujesz po indeksach listy item
+
+while i > item
+nie iteruje tylko powtarza dopuki warunek jest prawdziwy
+
+
+lista: [ ]
+    można zmieniać, dodawać, usuwać elementy
+    elementy mają kolejność (indeksy)
+    Pozwala na duplikaty
+
+krotka: ( )
+    Niemodyfikowalna (immutable) – po stworzeniu nie można zmieniać
+    Uporządkowana
+    Pozwala na duplikaty
+    Indeksowanie działa jak w liście
+
+zbiór: { }
+    Modyfikowalny (mutable) – można dodawać/usuwać.
+    Nieuporządkowany – brak gwarancji kolejności przy wypisywaniu.
+    Brak duplikatów – przechowuje tylko unikalne elementy.
+    Brak indeksów – nie ma set[0].
+
