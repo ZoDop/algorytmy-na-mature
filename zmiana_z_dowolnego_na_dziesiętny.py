@@ -1,3 +1,18 @@
+# dla wszystkich do 16
+def z_dowolnego_na_dziesetny(liczba, system):
+    liczba = str(liczba).upper()
+    system = int(system)
+    cyfry = "0123456789ABCDEF"
+    suma = 0
+    exp = len(liczba) - 1
+
+    for znak in liczba:
+        wartosc = cyfry.index(znak)
+        suma += wartosc * (system ** exp)
+        exp -= 1
+
+    return suma
+
 
 # dla wszystkich do dziesiętnego
 def from_bin(n: str) -> int:
