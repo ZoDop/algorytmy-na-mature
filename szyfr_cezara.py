@@ -24,12 +24,13 @@ def szyfruj(slowo, klucz):
     return zaszyfrowane_slowo
 
 
-    def odszyfruj(slowo, klucz):
-    odszyfrowane_slowo = ""
-    for i in range(len(slowo)):
-            klucz = klucz % 26
-            znak = chr(ord(slowo[i]) - klucz)
-            if znak < 'a':         # przypadek w którym znak wyszedł poza alfabet
-                znak = chr(ord(znak) + 26)
-            odszyfrowane_slowo += znak
-    return odszyfrowane_slowo
+def odszyfruj(slowo, klucz):
+odszyfrowane_slowo = ""
+for i in range(len(slowo)):
+        klucz = klucz % 26
+        znak = chr(ord(slowo[i]) - klucz)
+        if znak < 'a':         # przypadek w którym znak wyszedł poza alfabet
+            znak = chr(ord(znak) + 26)
+        odszyfrowane_slowo += znak
+return odszyfrowane_slowo
+
